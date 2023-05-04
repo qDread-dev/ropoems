@@ -19,7 +19,16 @@
             <div class="poem-text">
                 <p id="poem">FILLER TEXT</p>
             </div>
-            
         </div>
+        <script>
+            function changeItem(poemName){
+                var poemNameElement = document.getElementById('poemName');
+                var poemContent = document.getElementById('poem');
+                var temp = poemNameList.indexOf(poemName);
+                poemNameElement.innerHTML = poemNameList[temp];
+                poemContent.innerHTML = poemList[temp];
+            }
+            
+        </script>
     </body>
 </html>

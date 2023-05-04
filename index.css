@@ -43,6 +43,7 @@
     height: 15px, 15px;
     background-color: #344041;
     color: #cfcfcf;
+    cursor: pointer;
 }
 body{
     background-color: #2f3a3b;

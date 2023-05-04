@@ -1429,8 +1429,8 @@ let poemList = [
     And He commands the saved to go tell.`
 
 ]
-const poemNames = [
-    "Precious Memories", `Lynn's Death`, `A Loved-one's Death`, "God's Blessings", "I Walked with Cod", "I Thank Thee Lord", 
+const poemNameList = [
+    "Precious Memories", `Lynn's Death`, `A Loved-one's Death`, "God's Blessings", "I Walked with God", "I Thank Thee Lord", 
     "The Loveliest Names", "Christian Friends", "My Message to you", "My Friend", "What was I?", "God's Holy Word", "Contagious Cheerfulness",
     "Y-All-Come", "How to Live", "Young People take Heed", "The Senior's Prayer", "The Set of the Sail", "My Church", "Firemen Needed", "Don't Say I Can't",
     "What is the Matter?", "Satan Asleep by the Steeple", "The Pleading of the Needy", "I Sought for God", "The Road Jesus Traveled", "God's Christmas Baby",
@@ -1446,16 +1446,15 @@ function getRandomInt(max) {
 }
 window.onload = function(){
     let rand = getRandomInt(poemList.length)
-    const poemName = document.getElementById('poemName')
-    const poemContent = document.getElementById('poem')
+    var poemName = document.getElementById('poemName')
+    var poemContent = document.getElementById('poem')
     poemContent.innerHTML = poemList[rand]
-    poemName.innerHTML = poemNames[rand]
+    poemName.innerHTML = poemNameList[rand]
     let list = document.getElementById('theList')
-    poemNames.forEach((item)=>{
+    poemNameList.forEach((item)=>{
         let li = document.createElement('li');
+        li.setAttribute("onclick", `changeItem("${item}")`);
         li.innerText = item;
         list.appendChild(li);
-        // let br = document.createElement('br')
-        // list.appendChild(br)
     })
 }
