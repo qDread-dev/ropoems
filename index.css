@@ -33,15 +33,13 @@
     border-color: #344041;
     color: #cfcfcf;
     margin: 10px;
+    padding: 10px;
     width: 210px;
-    height: 10px, 10px;
+    height: 25px;
     transition: .4s;
 }
 #theList li:hover{
     transition: .4s;
-    margin: 5px;
-    width: 220px;
-    height: 15px, 15px;
     background-color: #344041;
     color: #cfcfcf;
     cursor: pointer;
@@ -51,4 +49,13 @@ body{
 }
 p, h2 {
     color: #cfcfcf
+}
+
+/* Firefox Scrollbar */
+
+/* add a custom scroll bar for fire fox */
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #344041 #394648;
 }
