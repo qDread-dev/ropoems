@@ -25,6 +25,7 @@
 
 }
 #theList li{
+    user-select: none;
     background-color: #394648;
     text-align: center;
     border-style: solid;
