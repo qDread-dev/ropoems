@@ -1453,7 +1453,8 @@ window.onload = function(){
     let list = document.getElementById('theList')
     poemNameList.forEach((item)=>{
         let li = document.createElement('li');
-        li.setAttribute("onclick", `changeItem("${item}")`);
+        li.setAttribute("onclick", `changeItem("${item}"), runAnimation()`);
+        li.setAttribute("class", "poem-name-list")
         li.innerText = item;
         list.appendChild(li);
     })
