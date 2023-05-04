@@ -59,3 +59,18 @@ body {
     scrollbar-width: thin;
     scrollbar-color: #344041 #394648;
 }
+/* mirror above for webkit */
+::-webkit-scrollbar {
+    background-color: #394648;
+}
+
+::-webkit-scrollbar-track {
+    width:10px
+}
+
+::-webkit-scrollbar-thumb {
+    background: #344041;
+    width: 5px;
+    border-radius: 20px;
+    border: 3px solid #394648;
+}
