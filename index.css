@@ -1,11 +1,12 @@
 .poem-wrapper{
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
     margin: auto;
     width: 50%;
 }
-.poem-wrapper p{
-    text-align: center;
-}
+
 
 .poem-list-wrapper #theList{
     list-style: none;
@@ -46,6 +47,6 @@
 body{
     background-color: #2f3a3b;
 }
-p {
+p, h2 {
     color: #cfcfcf
 }
