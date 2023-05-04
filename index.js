@@ -1445,9 +1445,17 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 window.onload = function(){
-    let rand = getRandomInt(67)
+    let rand = getRandomInt(poemList.length)
     const poemName = document.getElementById('poemName')
     const poemContent = document.getElementById('poem')
     poemContent.innerHTML = poemList[rand]
     poemName.innerHTML = poemNames[rand]
+    let list = document.getElementById('theList')
+    poemNames.forEach((item)=>{
+        let li = document.createElement('li');
+        li.innerText = item;
+        list.appendChild(li);
+        // let br = document.createElement('br')
+        // list.appendChild(br)
+    })
 }

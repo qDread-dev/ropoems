@@ -1,0 +1,48 @@
+.poem-wrapper{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+.poem-wrapper p{
+    text-align: center;
+}
+
+.poem-list-wrapper #theList{
+    list-style: none;
+    margin: 30px;
+}
+.poem-list-wrapper{
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    height: 100%;
+    
+
+}
+#theList li{
+    background-color: #394648;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #344041;
+    color: #cfcfcf;
+    margin: 10px;
+    width: 210px;
+    height: 10px, 10px;
+    transition: .4s;
+}
+#theList li:hover{
+    transition: .4s;
+    margin: 5px;
+    width: 220px;
+    height: 15px, 15px;
+    background-color: #344041;
+    color: #cfcfcf;
+}
+body{
+    background-color: #2f3a3b;
+}
+p {
+    color: #cfcfcf
+}
