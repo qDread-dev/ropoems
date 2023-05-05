@@ -9,6 +9,7 @@
     transition-duration: .5s;
     animation-duration: .5s;
     animation-timing-function: ease-out;
+    height:100%;
 }
 
 
@@ -71,7 +72,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    width:10px
+    width:10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -91,5 +92,43 @@ body {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+/* CSS For Mobile */
+/* Detect small sreen */
+
+@media only screen and (max-width: 800px) {
+
+    .poem-list-wrapper{
+        display:inline-block;
+        height: 100%;
+        margin:0px;
+        width: 30vw;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    .poem-list-wrapper #theList{
+        list-style: none;
+        margin: 0px;
+        width:30vw;
+        /* center in div, including scrollbar */
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        
+    }   
+    #theList li{
+        /* add a padding of 5px to each side, not including the size taken up by the scrollbar */
+        width:22vw;
+    }
+    #poem-wrapper{
+        display: inline-block;
+        /* prevent this div from over lapping the poem list wrapper div, but take all other available space */
+        width: 125%;
+        padding:10px
     }
 }
