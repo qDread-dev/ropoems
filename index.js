@@ -1457,5 +1457,5 @@ window.onload = function(){
         li.setAttribute("class", "poem-name-list")
         li.innerText = item;
         list.appendChild(li);
-    })
+    });
 }
